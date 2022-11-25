@@ -1,0 +1,54 @@
+source ~/.vimrc
+
+" 复制粘贴
+vmap <space>y <Action>($Copy)
+vmap <space>p <Action>($Paste)
+vmap <space>x <Action>($Cut)
+map <space>sa <Action>($SelectAll)
+
+" 格式化代码
+nmap <space>f <Action>(ReformatCode)
+
+" 切换标记
+nmap <space>m <Action>(ToggleBookmark)
+
+" 切换断点
+nmap <space>b <Action>(ToggleLineBreakpoint)
+
+" 启动调试
+nmap <space>d <Action>(Debug)
+command Run action Run
+command Debug action Debug
+command Profile action Android Profiler
+command Stop action Stop
+
+" Flutter 相关
+command FBuildApk action flutter.build.apk
+command FBuildWeb action flutter.build.web
+command FClean action flutter.clean
+command FGet action flutter.pub.get
+nmap <space>r <Action>(Flutter.Toolbar.ReloadAllAction)
+nmap <space>R <Action>(Flutter.Toolbar.RestartAllAction)
+
+" 跳转到标记
+command GoBM0 <Action>(GotoBookmark0)
+command GoBM1 <Action>(GotoBookmark1)
+command GoBM2 <Action>(GotoBookmark2)
+command GoBM3 <Action>(GotoBookmark3)
+command GoBM4 <Action>(GotoBookmark4)
+command GoBM5 <Action>(GotoBookmark5)
+command GoBM6 <Action>(GotoBookmark6)
+command GoBM7 <Action>(GotoBookmark7)
+command GoBM8 <Action>(GotoBookmark8)
+command GoBM9 <Action>(GotoBookmark9)
+
+" 跳转到标签页
+command T1 <Action>(GoToTab1)
+command T2 <Action>(GoToTab2)
+command T3 <Action>(GoToTab3)
+command T4 <Action>(GoToTab4)
+command T5 <Action>(GoToTab5)
+command T6 <Action>(GoToTab6)
+command T7 <Action>(GoToTab7)
+command T8 <Action>(GoToTab8)
+command T9 <Action>(GoToTab9)

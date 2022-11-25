@@ -12,6 +12,14 @@
 "     curl https://raw.githubusercontent.com/the-eric-kwok/vim-for-server/master/vimrc > ~/.vimrc
 "==========================================
 
+" =========================================
+"   插件配置部分
+" =========================================
+call plug#begin()
+Plug 'wakatime/vim-wakatime'
+
+call plug#end()
+
 " leader
 let mapleader = ','
 let g:mapleader = ','
@@ -321,8 +329,8 @@ inoremap <C-e> <End>
 map <C-F> /
 
 " 进入搜索Use sane regexes"
-nnoremap / /\v
-vnoremap / /\v
+"nnoremap / /\v
+"vnoremap / /\v
 nnoremap ? ?\v
 vnoremap ? ?\v
 
