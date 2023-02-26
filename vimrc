@@ -222,6 +222,9 @@ nnoremap gk k
 nnoremap j gj
 nnoremap gj j
 
+" 重映射粘贴键，以支持连续粘贴
+vnoremap p "0p
+
 " 分屏窗口移动
 map <C-j> <C-W>j
 map <C-k> <C-W>k
