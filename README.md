@@ -35,13 +35,13 @@ or using git
 
 ```
 # Unix/Linux/macOS
-git clone https://github.com/the-eric-kwok/vim-for-server.git
-ln -s vim-for-server/vimrc ~/.vimrc
+git clone https://github.com/the-eric-kwok/vim-for-server.git .vim-for-server
+ln -s .vim-for-server/vimrc ~/.vimrc
 
 # Windows PowerShell
-git clone https://github.com/the-eric-kwok/vim-for-server.git
+git clone https://github.com/the-eric-kwok/vim-for-server.git .vim-for-server
 # Run below command in Administrator privelege
-New-Item -Value vim-for-server/vimrc -Path ~\.vimrc -ItemType SymbolicLink
+New-Item -Value .vim-for-server/vimrc -Path ~\.vimrc -ItemType SymbolicLink
 
 ```
 
