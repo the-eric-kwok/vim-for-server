@@ -23,7 +23,6 @@ cp ~/.vimrc ~/.vimrc_bak
 
 #### 2. just get the file
 
-recommend
 ```
 # Unix/Linux/macOS
 curl https://raw.githubusercontent.com/the-eric-kwok/vim-for-server/master/vimrc > ~/.vimrc
@@ -31,7 +30,8 @@ curl https://raw.githubusercontent.com/the-eric-kwok/vim-for-server/master/vimrc
 # Windows PowerShell
 Invoke-WebRequest -URI https://raw.githubusercontent.com/the-eric-kwok/vim-for-server/master/vimrc -OutFile ~\.vimrc
 ```
-or  use git
+
+or using git
 
 ```
 # Unix/Linux/macOS
@@ -43,16 +43,6 @@ git clone https://github.com/the-eric-kwok/vim-for-server.git
 # Run below command in Administrator privelege
 New-Item -Value vim-for-server/vimrc -Path ~\.vimrc -ItemType SymbolicLink
 
-```
-
-If you're using IdeaVim, you can do
-```
-# Unix/Linux/macOS
-ln -s vim-for-server/vimrc ~/.ideavimrc
-
-# Windows PowerShell
-# Run below command in Administrator privelege
-New-Item -Value vim-for-server/vimrc -Path ~\.ideavimrc -ItemType SymbolicLink
 ```
 
 #### 3. Done, enjoy it
