@@ -12,14 +12,6 @@
 "     curl https://raw.githubusercontent.com/the-eric-kwok/vim-for-server/master/vimrc > ~/.vimrc
 "==========================================
 
-" =========================================
-"   插件配置部分
-" =========================================
-call plug#begin()
-Plug 'wakatime/vim-wakatime'
-
-call plug#end()
-
 " leader
 let mapleader = ','
 let g:mapleader = ','
@@ -310,11 +302,17 @@ map Y y$
 " ex mode commands made easy 用于快速进入命令行
 nnoremap ; :
 
-" Shift+H goto head of the line, Shift+L goto end of the line
-nnoremap H ^
-nnoremap L $
-vnoremap H ^
-vnoremap L $
+" Shift+H 跳转到当前行开始位置（有内容的地方）, Shift+L 跳转到当前行结束为止（有内容的地方）
+nnoremap H g^
+nnoremap L g$
+vnoremap H g^
+vnoremap L g$
+
+" gh 跳转到当前行首, gl 跳转到当前行尾
+nnoremap gh ^
+nnoremap gl $
+vnoremap gh ^
+vnoremap gl $
 
 " Shift+K 向下滚动半屏, Shift+J 向上滚动半屏
 nnoremap J <C-d>
